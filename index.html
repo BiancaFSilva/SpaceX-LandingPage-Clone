@@ -14,19 +14,23 @@
         <meta property="og:description" content="SpaceX landing-page clone">
         <meta property="og:site_name" content="SpaceX"/>
         <meta property="og:image" content="https://www.spacex.com/static/images/share.jpg"/>
-        <meta property="og:url" content="#"/>
+        <meta property="og:url" content="https://biancafsilva.github.io/SpaceX-LandingPage-Clone/"/>
 
         <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/ico"> 
-
-        <link rel="stylesheet" href="assets/css/reset.css" /> 
-		<link rel="stylesheet" href="assets/css/mission.css" />		
-		<link rel="stylesheet" href="assets/css/footer.css" />		
-		<link rel="stylesheet" href="assets/css/responsive.css" /> 
+  
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/hamburger.css" />
+		<link rel="stylesheet" href="css/mission.css" />
+		<link rel="stylesheet" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
     </head>
     
     <body>
-        <header class="header">
+        <header class="header show">
             <div class="background"></div>
             <div class="header_inner">
                 <div class="header_logo"> <a href="#"> <img src="./assets/img/spacex-logo.png" alt="Logo SpaceX"> </a> </div>
@@ -43,8 +47,13 @@
                     </ul>
                     <div class="shop_container"> <a class="nav_link" href="https://shop.spacex.com/">Shop</a> </div>
                 </nav>
+                <button class="hamburger hamburger--emphatic" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
             </div>
-        </header>
+        </header>       
 
         <nav class="navigation_menu">
             <ul>
@@ -84,7 +93,7 @@
             <div class="background three"></div>
             <div class="bottom_content">
                 <h4 class="bottom_content_subheader">Recent launch</h4>
-                <h1 class="bottom_content_header">SES 03B MPower Mission</h1>
+                <h1 class="bottom_content_header">SES O3b mPOWER Mission</h1>
                 <a class="content_buttom" href="https://www.spacex.com/launches/mission/?missionId=SES-03b-mPOWERb-pl">
                     <span class="text">Rewatch</span>
                     <div class="hover"></div>
@@ -117,7 +126,7 @@
         </section>
 
         <footer class="footer">
-            <div class="footer_txt">SpaceX © <script>document.write(new Date().getFullYear());</script></div>
+            <div class="footer_text">SpaceX © <script>document.write(new Date().getFullYear());</script></div>
             <ul class="footer_list">
                 <li> <a class="footer_list_link" target="_blank" href="https://twitter.com/spacex">Twitter</a> </li>
                 <li> <a class="footer_list_link" target="_blank" href="https://www.youtube.com/spacex">YouTube</a> </li>
@@ -129,6 +138,6 @@
             </ul>
         </footer>
 
-        <script src="assets/js/index.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
