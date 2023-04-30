@@ -42,46 +42,53 @@
 	background-position: 65% center;
 }
 
-.mission_container .bottom_content {
+a .text {	
+	text-decoration: none;
+	margin-top: 1rem;
+	border: 2px solid white;
+	padding: 1rem 2.5rem;	
+}
+
+.bottom_content {
 	position: absolute;
 	bottom: 10%;
 	left: 1.5rem;
 	width: 90%;
-	max-width: 500px;
-	overflow: hidden;
+	max-width: 500px;	
 	opacity: 1;
 	transform: translateY(-100%);
 	transition: opacity 1s, transform 1s;
 }
 
-.mission_container .bottom_content .bottom_content_header {
+.bottom_content_header {
 	font-size: 2rem;
 	text-align: left;
 	margin: 0 0 1rem auto;
 	font-weight: 600;
 }
 
-.mission_container .bottom_content .bottom_content_subheader {
+.bottom_content_subheader {
 	font-size: 1rem;
+	font-weight: normal;
 }
 
-.mission_container .bottom_content .content_button {	
-	display: inline-block;
-	position: relative;
-	z-index: 2;
+.content_button {	
 	margin-top: 1rem;
 	border: 2px solid white;
+	display: inline-block;
+	position: relative;
+	z-index: 2;	
 }
 
-.mission_container .bottom_content .content_button .text {
+.content_button .text {
 	font-weight: bold;
-	font-size: 0.8rem;
+	font-size: 0.4rem;
 	display: inline-block;
-	padding: 1.2rem 2.5rem;
+	padding: 1rem 2.5rem;
 	transition: color 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.mission_container .bottom_content .content_button .hover {
+.content_button .hover {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -94,12 +101,12 @@
 	transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.mission_container .bottom_content .content_button:hover .hover {
+.content_button:hover .hover {
 	transform: scale3d(1, 1, 1);
 	transform-origin: bottom center;
 }
 
-.mission_container .bottom_content .content_button:hover .text {
+.content_button:hover .text {
 	color: black;
 }
 

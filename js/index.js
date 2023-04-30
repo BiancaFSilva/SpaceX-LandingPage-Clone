@@ -12,6 +12,12 @@ const WITH_BACKGROUND = 'with_background'
 hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle(IS_ACTIVE)
 	navigation.classList.toggle('open')
+
+	if (navigation.classList.contains('open')) {
+		document.querySelector('.shop_container').style.display = 'none'	
+	} else {
+		document.querySelector('.shop_container').style.display = 'flex'
+	}
 })
 
 const missionObserver = new IntersectionObserver(
